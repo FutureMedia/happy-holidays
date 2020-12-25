@@ -22,6 +22,7 @@ export class App extends BasicThree {
 
   init() {
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
+    controls.noZoom = true;
     controls.update();
 
     //this.scene.background = new THREE.Color(0xff0000);
